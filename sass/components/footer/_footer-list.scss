@@ -1,0 +1,40 @@
+.address {
+    margin-top: 20px;
+
+    &__text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.7;
+        font-style: normal;
+        color: $primary-white-color;
+    }
+
+    &__item:not(:last-child) {
+        margin-bottom: 9px;
+    }
+
+    &__link {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.7;
+        font-style: normal;
+        color: $footer-link-color;
+        text-decoration: none;
+    
+        transition: color $animation-time $cubic;
+    }
+
+    &__link:hover,
+    &__link:focus {
+        color: $accent-color;
+    }
+}
+
+
+
+
+
+
+
+
+

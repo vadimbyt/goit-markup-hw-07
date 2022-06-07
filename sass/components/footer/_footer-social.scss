@@ -1,0 +1,9 @@
+.social-footer {
+    margin-left: 70px;
+}
+
+.social__link--footer {
+    @include social-media ($footer-social-icon-bg);
+    fill: $primary-white-color;
+
+}

@@ -1,0 +1,38 @@
+.clients {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__item {
+        width: calc((100%-150px) / 6);
+        margin-right: 30px;
+    }
+
+    &__item:last-child {
+        margin-right: 0;
+    }
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 170px;
+        height: 92px;
+        border: 1px solid $social-media;
+        fill: $social-media;
+        border-radius: 4px;
+    
+        transition: fill $animation-time $cubic,
+            background-color $animation-time $cubic;
+    }
+
+    &__link:hover {
+        fill: $accent-color;
+        border-color: $accent-color;
+    }
+}
+
+

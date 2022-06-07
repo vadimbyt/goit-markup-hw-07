@@ -1,0 +1,39 @@
+.about {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+        width: calc((100% - 90px) / 4);
+        margin-right: 30px;
+    }
+
+    &__item:last-child {
+        margin-right: 0;
+    }
+    
+    &__box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 120px;
+        margin-bottom: 30px;
+    
+        background-color: $section-team-background;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        text-transform: uppercase;
+        color: $title-text-color;
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.7;
+        color: $text-color;
+    }
+}
